@@ -17,6 +17,27 @@
   box-sizing: border-box;
 }
 
+html {
+  --scrollbarBG: #b4e1b4;
+  --thumbBG: #226767;
+}
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
@@ -35,6 +56,7 @@ a {
 p {
   display: grid;
   grid-template-columns: 1fr;
+  color: #0c4c4c;
 }
 
 .container {
@@ -56,6 +78,7 @@ p {
   width: 100%;
   padding: 12px 0;
   z-index: 99;
+  background-color: #b4e1b4;
 }
 
 .header::before {
@@ -102,28 +125,6 @@ p {
   height: 3rem;
   position: relative;
 }
-
-/* #menuBtn {
-  width: 3.5rem;
-  height: 3rem;
-  position: fixed;
-  z-index: 6;
-  cursor: pointer;
-}
-
-#menuBtn img {
-  position: relative;
-  left: 1850px;
-  bottom: 5px;
-  width: 50px;
-  height: 50px;
-}
-
-#menuBtn.active {
-  position: absolute;
-  right: 0;
-  z-index: 5;
-} */
 
 .header .nav {
   position: fixed;
@@ -200,7 +201,7 @@ p {
   font-size: 1.5rem;
   padding: 0 19rem;
   margin: 1rem 0 0;
-  color: black;
+  color: #0c4c4c;
 }
 
 .home-section .home-bg {
@@ -229,6 +230,30 @@ p {
   transition: all 0.3s ease;
   box-shadow: var(--shadow);
 }
+.sec-padding {
+  padding: 4.5rem 0;
+}
+
+.section-title {
+  width: 100%;
+  padding: 0 1rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title h2 {
+  font-size: 4rem;
+  padding: 1rem 0;
+  color: #0c4c4c;
+  text-transform: capitalize;
+}
+
+.section-title h2::before {
+  content: attr(data-title);
+  display: block;
+  padding: 0 0 2rem 0;
+  font-family: "Dancing Script", sans-serif;
+}
 
 .btn-default:hover {
   background-color: #b4e1b4;
@@ -251,6 +276,11 @@ p {
   }
 }
 
+/* About Section */
+.about-section {
+  background-color: #b4e1b4;
+}
+
 /* ============================================================================================================================ */
 
 @media screen and (max-width: 768px) {
@@ -263,6 +293,13 @@ p {
     padding: 0 0;
     margin: 1rem 0 0;
     color: black;
+  }
+  .section-title h2::before {
+    padding: 0 0 4rem 0;
+  }
+  .section-title h2 {
+    font-size: 3rem;
+    padding: 0 0 2rem 0;
   }
 }
 
@@ -307,6 +344,12 @@ p {
     font-size: 1rem;
     padding: 0 1rem;
     margin: 1rem 0 0;
-    color: black;
+    color: #0c4c4c;
+  }
+  .section-title h2 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #0c4c4c;
+    text-transform: capitalize;
   }
 }
