@@ -9,7 +9,6 @@
 * {
   margin: 0;
   padding: 0;
-
   box-sizing: border-box;
   outline: none;
 }
@@ -161,6 +160,7 @@ p {
 
 .home-section {
   position: relative;
+  overflow: hidden;
 }
 
 .home-section::before {
@@ -193,6 +193,7 @@ p {
   padding: 3rem 0;
   font-family: "Dancing Script", sans-serif;
   color: #0c4c4c;
+  font-weight: bold;
 }
 
 .home-text p {
@@ -216,14 +217,14 @@ p {
   background-size: cover;
   background-position: center;
   z-index: -2;
+  animation: zoomInOut 20s ease infinite;
 }
 .btn-default {
   font-size: 2rem;
   color: #0c4c4c;
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   margin: 1rem 0;
-  border: none;
   border-radius: 5rem;
   transition: all 0.3s ease;
   box-shadow: var(--shadow);
@@ -232,7 +233,22 @@ p {
 .btn-default:hover {
   background-color: #b4e1b4;
   color: #226767;
-  font-weight: 700;
+  font-weight: 500;
+}
+.btn-default:active {
+  transform: translateY(6px);
+}
+
+/* animation keyframes */
+
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 /* ============================================================================================================================ */
