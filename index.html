@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carluccio's®</title>
+    <title>Carlucci's®</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Header -->
 
-    <header class="header">
+    <header class="header" id="#home">
       <div class="container">
         <div class="row">
           <div class="logo">
@@ -27,8 +31,8 @@
               <li class="nav-item"><a href="#home">Home</a></li>
               <li class="nav-item"><a href="#about">About Us</a></li>
               <li class="nav-item"><a href="#our-menu">Our Menu</a></li>
-              <li class="nav-item"><a href="#opinions">Opinions</a></li>
               <li class="nav-item"><a href="#team">Team</a></li>
+              <li class="nav-item"><a href="#opinions">Opinions</a></li>
               <li class="nav-item"><a href="#contact">Contact</a></li>
             </ul>
           </nav>
@@ -57,38 +61,345 @@
         </div>
       </div>
     </section>
-
+    <!-- End Home section -->
     <!-- About Section -->
     <section class="about-section sec-padding" id="about">
       <div class="container">
         <div class="row">
           <div class="section-title">
             <h2 data-title="our story">Some History</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-text">
+            <h3>How it started...</h3>
             <p>
               Established in 1812 and named after the town’s best fish
               "cacciatore nel Mundo", Tony Carlucci, our lobster-home is a
               family friendly venue delighting customers again and again with
               its home style breakfast and lunch (dinner is served Friday and
-              Saturday nights). Seafood lovers know to head to Carluccio's® Fish
+              Saturday nights). Seafood lovers know to head to Carlucci's® Fish
               House for some of the freshest seafood dishes available. Next door
               to Bell Buoy, their seafood specialty store, this family-owned and
               operated café is a casual joint where guests can savor some of the
               tastiest clam chowder around. The menu also features great options
               such as fish and chips made with halibut, wild salmon, or cod,
               seaside razor clams either grilled or deep fried, and crab cakes.
-              Seafood melts are also available in shrimp or crab varieties along
-              with cocktails and shooters.
-              <br>
-              <br>
-              <p>Today, we still peel our Gulf shrimp, shuck our Galveston bay oysters and fillet our fresh fish, by hand, the same way TC did more than 100 years ago. Because the Carlucci’s family has always remained passionate about food with our focus on taste. Our unique sauces, seasonings, salad dressings and delicious desserts are all house-made from time-tested family recipes. And over the decades, we blended in traditional southern deep-frying, Southwest open-flame grilling and rich Creole flavors. By infusing these wonderful surrounding cultures, Carluccio's® creates a menu and an experience unlike any other perched on the seawall.</p>
             </p>
+            <a href="#our-menu" class="btn btn-default">Check our Dishes</a>
+          </div>
+          <div class="about-img">
+            <div class="img-box">
+              <h3>100+ years of Romantic Evenings</h3>
+              <img src="img/story.jpg" alt="" />
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- End About Section -->
+    <!-- Menu Section -->
+    <section class="menu-section sec-padding" id="our-menu">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-title="Order Now">Our Menu</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="menu-tabs">
+            <button
+              type="button"
+              class="menu-tab-item active"
+              data-target="#lunch"
+            >
+              Lunch
+            </button>
+            <button type="button" class="menu-tab-item" data-target="#dinner">
+              Dinner
+            </button>
+            <button type="button" class="menu-tab-item" data-target="#drinks">
+              Drinks
+            </button>
+            <button type="button" class="menu-tab-item" data-target="#desserts">
+              Desserts
+            </button>
+          </div>
+        </div>
+        <div class="row menu-tab-content active" id="lunch">
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/01-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Vegan Lunch</h3>
+            </div>
+            <div class="menu-item-price">$49.95</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/11-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Oister Lunch</h3>
+            </div>
+            <div class="menu-item-price">$199.95</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/12-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Shrimp Lunch</h3>
+            </div>
+            <div class="menu-item-price">$89.95</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/10-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Seeds Lunch</h3>
+            </div>
+            <div class="menu-item-price">$69.95</div>
+          </div>
+        </div>
+        <div class="row menu-tab-content" id="dinner">
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/14-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Green Dinner</h3>
+            </div>
+            <div class="menu-item-price">$69.95</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/15-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Big Dinner</h3>
+            </div>
+            <div class="menu-item-price">$69.95</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/16-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Easy Dinner</h3>
+            </div>
+            <div class="menu-item-price">$69.95</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/17-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Quick Dinner</h3>
+            </div>
+            <div class="menu-item-price">$69.95</div>
+          </div>
+        </div>
+        <div class="row menu-tab-content" id="drinks">
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/005-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Margaritas</h3>
+            </div>
+            <div class="menu-item-price">$69.95</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/006-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Coctails</h3>
+            </div>
+            <div class="menu-item-price">$69.95</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/101-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Wiskeys</h3>
+            </div>
+            <div class="menu-item-price">$69.95</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/103-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Cognac</h3>
+            </div>
+            <div class="menu-item-price">$69.95</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/104-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Beers</h3>
+            </div>
+            <div class="menu-item-price">$69.95</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/103-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Tea</h3>
+            </div>
+            <div class="menu-item-price">$69.95</div>
+          </div>
+        </div>
+        <div class="row menu-tab-content" id="desserts">
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/007-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Cake Heaven</h3>
+            </div>
+            <div class="menu-item-price">$69.95</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/008-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Multi Sweet</h3>
+            </div>
+            <div class="menu-item-price">$69.95</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/009-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Sweet Cookies</h3>
+            </div>
+            <div class="menu-item-price">$69.95</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/010-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Happy Donut</h3>
+            </div>
+            <div class="menu-item-price">$69.95</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/011-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Canada Frutty</h3>
+            </div>
+            <div class="menu-item-price">$69.95</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              <img src="img/012-thumb.jpg" alt="menu item thumbnail" />
+              <h3>Giant Baclava</h3>
+            </div>
+            <div class="menu-item-price">$69.95</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Menu Section -->
 
-    <!-- End Home section -->
+    <!-- Team Section -->
+    <section class="team-section sec-padding" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-title="Team Carlucci's®">Our Chefs</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="team-item">
+            <img src="img/chef1.jpg" alt="" />
+            <div class="team-item-info">
+              <h2>Thierry Wilhelm</h2>
+              <p>Head Chef</p>
+            </div>
+          </div>
+          <div class="team-item">
+            <img src="img/chef3.jpg" alt="" />
+            <div class="team-item-info">
+              <h2>Sandy Montague</h2>
+              <p>Head Chef</p>
+            </div>
+          </div>
+          <div class="team-item">
+            <img src="img/chef2.jpg" alt="" />
+            <div class="team-item-info">
+              <h2>Pietro Lucci</h2>
+              <p>Head Chef</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Team Section -->
+
+    <!-- Opinions Section -->
+    <section class="opinions-section sec-padding" id="opinions">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-title="Opinions">About our Services</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="opinion-item">
+            <div class="opinion-user">
+              <div class="opinion-user-name">
+                <h3>Celia Proodhome</h3>
+                <span>Engineer</span>
+              </div>
+              <div class="opinion-user-img">
+                <img src="img/user1.jpg" alt="" />
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              inventore cupiditate at nisi perferendis voluptatibus illo quis
+              eaque asperiores, ea soluta sapiente temporibus. In error sunt
+              asperiores sint, totam numquam?
+            </p>
+            <div class="ratings">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="opinion-item">
+            <div class="opinion-user">
+              <div class="opinion-user-name">
+                <h3>Robert Grant</h3>
+                <span>IT Specialist</span>
+              </div>
+              <div class="opinion-user-img">
+                <img src="img/user2.jpg" alt="" />
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              inventore cupiditate at nisi perferendis voluptatibus illo quis
+              eaque asperiores, ea soluta sapiente temporibus. In error sunt
+              asperiores sint, totam numquam?
+            </p>
+            <div class="ratings">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="opinion-item">
+            <div class="opinion-user">
+              <div class="opinion-user-name">
+                <h3>Sonya Bridge</h3>
+                <span>Fashion Designer</span>
+              </div>
+              <div class="opinion-user-img">
+                <img src="img/user3.jpg" alt="" />
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              inventore cupiditate at nisi perferendis voluptatibus illo quis
+              eaque asperiores, ea soluta sapiente temporibus. In error sunt
+              asperiores sint, totam numquam?
+            </p>
+            <div class="ratings">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Opinions Section -->
+
     <script src="js/main.js"></script>
   </body>
 </html>
