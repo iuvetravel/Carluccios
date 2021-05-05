@@ -611,14 +611,17 @@ a {
   text-shadow: var(--shadow);
 }
 .footer .copy {
-  color: #022222;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
   width: 100%;
-  vertical-align: bottom;
+  color: #ffffff;
+  background: #0c4c4c;
+  font-size: 1.5em;
   text-align: center;
-  font-size: 2rem;
-  border-top: 1px solid #0c4c4c;
-  margin-bottom: 0;
-  padding: 5rem 0 0 0;
+  line-height: 100px;
+  font-weight: 100;
 }
 /*============================================================================================================================ */
 
