@@ -504,6 +504,7 @@ a {
   padding-bottom: 6rem;
   width: 100%;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .team-section .section-title h2 {
@@ -525,25 +526,25 @@ a {
 }
 
 .team-item:hover img {
-  transform: scale(1.18);
+  transform: scale(1.12);
 }
 
 .team-item-info {
   width: 70%;
   background-color: #226767;
   margin-left: 4rem;
-  padding: 0.5rem;
+  padding: 0.2rem;
   text-align: center;
   box-shadow: var(--shadow);
   border-radius: 1rem;
   position: absolute;
-  bottom: 0;
+  bottom: 65px;
   transform: translateY(50%);
   transition: all 0.5s ease;
   pointer-events: none;
 }
 .team-item:hover .team-item-info {
-  transform: translateY(-15px);
+  transform: translateY(-25px);
   background-color: #022222;
 }
 
