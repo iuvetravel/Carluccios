@@ -904,20 +904,19 @@ a {
   }
   .team-item-info {
     margin-left: 2rem;
+    padding: 0.3 0;
+    bottom: 25px;
   }
 
   .team-item {
     margin: 0 auto;
     margin-left: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     width: 100%;
   }
   .team-item img {
     width: 90%;
     align-items: center;
-  }
-  .team-item-info {
-    font-size: 1rem;
   }
 
   .opinion-item {
