@@ -881,8 +881,10 @@ a {
   }
 
   .menu-tab-item {
+    font-size: 1rem;
     color: #0c4c4c;
     font-weight: 500;
+    padding: 2rem 10px;
   }
   .team-item-info h2 {
     font-family: "Dancing Script", sans-serif;
