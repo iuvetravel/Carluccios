@@ -879,6 +879,7 @@ a {
   }
   .menu-tab-item.active {
     font-size: 2rem;
+    color: #226767;
   }
 
   .menu-tab-item {
