@@ -54,6 +54,7 @@ a {
 .container {
   max-width: 100%;
   margin: auto;
+  overflow: hidden;
 }
 
 .row {
@@ -151,9 +152,7 @@ a {
   font-weight: 700;
 }
 /* home section */
-.row {
-  overflow: hidden;
-}
+
 .home-section {
   position: relative;
   overflow: hidden;
